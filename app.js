@@ -35,6 +35,12 @@ const testemonial = [
 const tmContainer = document.getElementById("tm-container");
 const tmCardTemp = document.getElementById("tm-card-temp");
 
-const clone = document.importNode(tmCardTemp.content, true);
-tmContainer.appendChild(clone);
 
+testemonial.forEach( t => {
+    const clone = document.importNode(tmCardTemp.content, true);
+    clone.querySelector(".user-name").textContent = t.name;
+    clone.querySelector(".user-title").textContent = t.title;
+    clone.querySelector(".t-header").textContent = t.header;
+    clone.querySelector(".t-text").textContent = t.text;
+    tmContainer.appendChild(clone);
+});
