@@ -42,5 +42,8 @@ testemonial.forEach( t => {
     clone.querySelector(".user-title").textContent = t.title;
     clone.querySelector(".t-header").textContent = t.header;
     clone.querySelector(".t-text").textContent = t.text;
+    let imgPath = `./images/image-${t.name.split(" ")[0].toLowerCase()}.jpg`;
+    clone.querySelector(".avatar").src = imgPath;
+    console.log(imgPath);
     tmContainer.appendChild(clone);
 });
