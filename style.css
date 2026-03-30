@@ -22,7 +22,6 @@
     --Grey-500: hsl(217, 19%, 35%);
     --Dark-blue: hsl(219, 29%, 14%);
     --Black: hsl(0, 0%, 7%);
-
 }
 
 body {
@@ -43,12 +42,14 @@ body {
 }
 
 .card {
+
 }
 
 .img-cont {
 }
 
 .avatar {
+    border-radius: 50%;
 }
 
 .bio-cont {
