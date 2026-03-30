@@ -25,7 +25,7 @@
 }
 
 body {
-    font-sixe: 13px;
+    font-size: 13px;
     /*barlow-semi-condensed-medium */
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 500;
@@ -39,14 +39,27 @@ body {
 }
 
 .tm-container {
+    display: grid;
+    grid: auto-flow / repeat(3, 1fr);
+    gap: 100px 200px;
 }
 
 .card {
-    background-color: var(--
+    display: grid;
+    gap: 1em;
+    padding: 2em;
+    background-color: var(--purple-300);
+    border-radius: 1em;
+    box-shadow: 2em 2em 2em;
 }
 
 .img-cont {
-}
+    display: grid;
+    grid: 1fr / auto-flow;
+    gap: 1em;
+    align-items: center;
+    justify-content: start;
+ }
 
 .avatar {
     border-radius: 50%;
