@@ -25,6 +25,20 @@
 
 }
 
+body {
+    font-sixe: 13px;
+    /*barlow-semi-condensed-medium */
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.barlow-semi-condensed-semibold {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
 .tm-container {
 }
 
