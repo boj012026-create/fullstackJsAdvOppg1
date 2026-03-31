@@ -38,12 +38,15 @@ const tmCardTemp = document.getElementById("tm-card-temp");
 
 testemonial.forEach( t => {
     const clone = document.importNode(tmCardTemp.content, true);
+    let surName = t.name.split(" ")[0].toLowerCase(); 
+    let imgPath = `./images/image-${surName}.jpg`;
     clone.querySelector(".user-name").textContent = t.name;
     clone.querySelector(".user-title").textContent = t.title;
     clone.querySelector(".t-header").textContent = t.header;
     clone.querySelector(".t-text").textContent = t.text;
-    let imgPath = `./images/image-${t.name.split(" ")[0].toLowerCase()}.jpg`;
+    clone.querySelector("article").id = surName;
     clone.querySelector(".avatar").src = imgPath;
     console.log(imgPath);
+    console.log(surName);
     tmContainer.appendChild(clone);
 });

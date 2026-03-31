@@ -38,12 +38,15 @@ body {
   font-style: normal;
 }
 
-.tm-container {
+#tm-container {
     display: grid;
-    grid: auto-flow / repeat(3, 1fr);
-    gap: 100px 200px;
+    grid: auto-flow / repeat(4, 1fr);
+    height: 100vh;
 }
 
+#daniel {
+    background-color: white;
+}
 .card {
     display: grid;
     gap: 1em;
