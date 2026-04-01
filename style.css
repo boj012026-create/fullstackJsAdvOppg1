@@ -69,21 +69,6 @@ body {
     border-radius: 50%;
 }
 
-.bio-cont {
-}
-
-.user-name {
-}
-
-.user-title {
-}
-
-.t-header {
-}
-
-.t-text {
-}
-
 /*id's*/
 #tm-container {
     display: grid;
@@ -126,8 +111,15 @@ body {
 }
 
 @media screen and (max-width: 667px) {
+    .card {
+	gap: 1em;
+	padding: 2em;
+    }
+    
     #tm-container {
 	grid: auto-flow / 1fr;
+	gap: 2em;
+	padding: 2em;
     }
 
     #daniel, #patrick {
