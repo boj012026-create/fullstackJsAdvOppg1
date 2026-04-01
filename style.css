@@ -30,7 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    width: 90vw;
 
     /*barlow-semi-condensed-500 */
     font-family: "Barlow Semi Condensed", sans-serif;
@@ -88,9 +88,10 @@ body {
 #tm-container {
     display: grid;
     /*align-items: center;*/
-    grid: repeat(2, auto) / repeat(4, minmax(80px, 250px));
+    grid: repeat(2, auto) / repeat(4, minmax(130px, 250px));
    /*gap: 2em 2.5em;*/
     gap: 2vh 2vw;
+    margin: 2vh 2vw;
 }
 
 #daniel {
@@ -122,19 +123,4 @@ body {
     grid-column: span 2;
     color: var(--grey-200);
     background-color: var(--dark-blue);
-    
 }
-/*
-    --purple-50: hsl(260, 100%, 95%);
-    --purple-300: hsl(264, 82%, 80%);
-    --purple-500: hsl(263, 55%, 52%);
-    
-    
-    --white: hsl(0, 0%, 100%);
-    --grey-100: hsl(214, 17%, 92%);
-    --grey-200: hsl(0, 0%, 81%);
-    --grey-400: hsl(224, 10%, 45%);
-    --grey-500: hsl(217, 19%, 35%);
-    --dark-blue: hsl(219, 29%, 14%);
-    --black: hsl(0, 0%, 7%);
-*/
