@@ -24,6 +24,7 @@
     --black: hsl(0, 0%, 7%);
 }
 
+/*tags*/
 body {
     font-size: 13px;
     /*barlow-semi-condensed-medium */
@@ -32,21 +33,13 @@ body {
     font-style: normal;
 }
 
+/*classes*/
 .barlow-semi-condensed-semibold {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
-#tm-container {
-    display: grid;
-    grid: auto-flow / repeat(4, 1fr);
-    height: 100vh;
-}
-
-#daniel {
-    background-color: white;
-}
 .card {
     display: grid;
     gap: 1em;
@@ -83,3 +76,29 @@ body {
 .t-text {
 }
 
+/*id's*/
+#tm-container {
+    display: grid;
+    grid: auto-flow / repeat(4, 1fr);
+    height: 100vh;
+}
+
+#daniel {
+    background-color: white;
+}
+
+#jonathan {
+    background-color: white;
+}
+
+#kira {
+    background-color: white;
+}
+
+#jeanette {
+    background-color: white;
+}
+
+#patrick {
+    background-color: white;
+}
