@@ -51,6 +51,7 @@ body {
     display: grid;
     gap: 2vh 2vw;
     padding: 4vh 2vw;
+    /*font-size: clamp(13px, 1vw) ;*/
     background-color: var(--white);
     border-radius: 1em;
     box-shadow: 3em 5em 3em var(--grey-200);
@@ -65,17 +66,19 @@ body {
  }
 
 .avatar {
-    width: 2vw;
+    max-width: 2vw;
+    min-width: 30px;
     border-radius: 50%;
 }
 
 /*id's*/
 #tm-container {
     display: grid;
-    grid: repeat(2, auto) / repeat(4, minmax(130px, auto));
+    grid: repeat(2, auto) / repeat(4, minmax(140px, auto));
     width: 80vw;
+    height: 70vh;
     gap: 2.7vh 2vw;
-    margin: 2vh 2vw;
+    /*margin: 2vh 2vw;*/
 }
 
 #daniel {
@@ -98,6 +101,7 @@ body {
     order: 3;
     grid-row: span 2;
     color: var(--grey-500);
+    z-index: 1; /*was covered by others cards box-shadow*/
 }
 
 #jeanette {
@@ -117,8 +121,13 @@ body {
 
 @media screen and (max-width: 667px) {
     .card {
+	/*font-size: 13px;*/
 	gap: 2em;
 	padding: 2em;
+    }
+
+    .avatar {
+	width: 30px;
     }
     
     #tm-container {
